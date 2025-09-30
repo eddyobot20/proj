@@ -372,7 +372,7 @@ html {
 }
 
 /* Tab Screen */
-@media screen and (min-width: 768px) and (max-width: 1114px){
+@media screen and (min-width: 768px) and (max-width: 1200px){
     .main-content h1 {
         text-align: center;
         padding-left: 70px;
@@ -423,7 +423,11 @@ html {
 }
 
 /* Mobile Screen */
-@media screen and (min-width: 162px) and (max-width: 440px) {
+@media screen and (min-width: 320px) and (max-width: 440px) {
+    body {
+        background-blend-mode: lighten;
+    }
+    
     .nav img {
         display: none;
     }
