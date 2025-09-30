@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    /* background-color: #fefefe; */
+    background-image: url("../images/photo_1_2025-09-11_12-01-52.jpg");
+    background-color: #f5f5f5;
+    background-blend-mode: lighten;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    background-color: #fafafaee;
+    position: sticky;
+    top: 0;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    align-self: stretch;
+}
+
+.nav-link li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #787a7c;
+}
+
+.nav-link li a:hover {
+    color: #6087FD;
+}
+
+/* .search {
+    overflow: hidden;
+    background-color: #e9e9e9;
+} */
+
+.search input {
+    padding: 10px;
+    border: 2px solid #831ab4;
+    width: 80%;
+    background: #f1f1f1;
+    /* border-radius: 5%; */
+    font-size: 0.95rem;
+}
+
+.search button {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    background: #fafafaee;
+    color: #163148;
+    font-size: 0.95rem;
+    border: none;
+    /* border: 1px solid #831ab4; */
+    /* border-left: none; */
+    cursor: pointer;
+}
+
+.search button:hover {
+    background: #e3e4e6;
+}
+
+.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn {
+    background-color: #831ab4;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.test {
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: #b5b8bb;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(17, 12, 46, 0.15);
+    margin-bottom: 10px;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card__header h3 {
+    font-size: 15px;
+}
+
+.card_img {
+    width: 250px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #996ed9;
+}
+
+.card__lead {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.card__quote {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 70%;
+}
+
+.recipe-btn {
+    background-color: #831ab4;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.recipe-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.more{
+    display: flex;
+    justify-self: flex-start;
+    background-color: #831ab4;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.more a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.foot {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.foot-icon {
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon-img {
+    width: 30px;
+    height: 30px;
+}
+
+.foot a {
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.foot a:hover {
+    color: #6087FD;
+}
+
+
