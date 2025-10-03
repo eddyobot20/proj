@@ -87,6 +87,7 @@ html {
     gap: 30px;
     align-items: center;
     align-self: stretch;
+    padding-right: 200px;
 }
 
 .nav-link li {
@@ -373,6 +374,10 @@ html {
 
 /* Tab Screen */
 @media screen and (min-width: 768px) and (max-width: 1200px){
+    .nav-link {
+        padding-right: 100px;
+    }
+    
     .main-content h1 {
         text-align: center;
         padding-left: 70px;
@@ -423,9 +428,13 @@ html {
 }
 
 /* Mobile Screen */
-@media screen and (min-width: 320px) and (max-width: 720px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     body {
         background-blend-mode: lighten;
+    }
+
+    .nav {
+        /* display: block; */
     }
     
     .nav img {

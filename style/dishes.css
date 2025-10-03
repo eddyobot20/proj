@@ -28,6 +28,16 @@ html {
     top: 0;
 }
 
+.nav a {
+    text-decoration: none;
+}
+
+.nav h2 {
+    display: none;
+    text-decoration: none;
+    color: #163148;
+}
+
 .nav-link {
     display: flex;
     justify-content: space-between;
@@ -49,6 +59,49 @@ html {
 .nav-link li a:hover {
     color: #6087FD;
 }
+
+.dropbtn {
+    display: none;
+    background-color: #831ab4;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #163148;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
 
 .ele h1 {
     color: #163148;
@@ -142,6 +195,14 @@ html {
     margin-bottom: 10px;
 }
 
+.card1 {
+    background-color: #b5b8bb;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(17, 12, 46, 0.15);
+    margin-bottom: 10px;
+}
+
 .card__header {
     display: flex;
     align-items: center;
@@ -225,4 +286,71 @@ html {
     color: #6087FD;
 }
 
+/* Tab screen */
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .nav-link .about {
+        display: none;
+    }
 
+    .test {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+    gap: 10px;
+    }
+
+    .card1 {
+        display: none;
+    }
+}
+
+/* Mobile screen */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .nav img {
+        display: none;
+    }
+
+    .nav h2 {
+        display: contents;
+        font-size: 1.2rem;
+    }
+    
+    .dropbtn {
+        display: contents;
+        color: #163148;
+    }
+
+    .dropbtn i {
+        width: 50%;;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .ele h1 {
+        padding-top: 30px;
+        width: 400px;
+        font-size: 2rem;
+    }
+
+    .ele-img1 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .ele p {
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .test {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5px;
+    gap: 10px;
+    }
+
+}
