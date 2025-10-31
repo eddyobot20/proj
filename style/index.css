@@ -432,6 +432,10 @@ html {
         display: none;
     }
 
+    .dot {
+        display: none;
+    }
+
     .test {
         grid-template-columns: repeat(2, 1fr);
         padding: 5px;
@@ -535,6 +539,10 @@ html {
     }
 
     .slideshow-container {
+        display: none;
+    }
+
+    .dot {
         display: none;
     }
 
